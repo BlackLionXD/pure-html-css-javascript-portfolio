@@ -92,6 +92,7 @@ body{
 .home-img img{
     
     width: 35vw;
+    border-radius: 50%;
 }
 
 .home-content p{
@@ -178,4 +179,32 @@ about-content h3{
 about-content ul{
     font-size:1.6rem;
     margin: 2rem 0 3rem
+}
+
+.services h2{
+    margin-bottom: 5rem;
+}
+
+.services-container{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.services-container .services-box{
+    flex: 1 1 30rem;
+    background: var(--second-bg-color);
+    padding: 12rem 8rem 16rem;
+    border-radius: 2rem; 
+    text-align: center;
+    border: 2rem solid var(--bg-color);
+    transition: .5s ease;
+}
+
+.services-container .services-box:hover{
+    border-color: var(--main-color);
+    transform: scale(1.02);
+
 }
